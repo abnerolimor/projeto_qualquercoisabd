@@ -20,6 +20,6 @@ create table venda(
 	operador varchar(255) not null,
 	data_venda date not null,
 	horario date not null,
-	funcionario_fk int not null, foreign key(funcionario_fk) references funcionario(pk),
-	produto_fk int not null, foreign key(produto_fk) references produto(pk)
-);
+	funcionarios_fk int not null, foreign key(funcionarios_fk) references funcionarios(pk),
+	produto_fk int not null, foreign key(produto_fk) references produto(pk) 
+    );
